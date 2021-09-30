@@ -27,3 +27,13 @@ int nextPrime(int n)
         x++;
     return x;
 }
+int countPrimes(int a, int b)
+{
+    int output=0;
+    for (int i = a; i<=b;i++)
+    {
+        if (isPrime(i))
+            output++;
+    }
+    return output;
+}
