@@ -44,20 +44,23 @@ TEST_CASE("nextPrime normal cases")
     CHECK(nextPrime(21)==23);
     CHECK(nextPrime(26)==29);
     CHECK(nextPrime(4)==5);
+}
 TEST_CASE("nextPrime negative cases")
 {
     CHECK(nextPrime(-1)==2);
-    CHECK(nextPrime(=100)==2);
+    CHECK(nextPrime(100)==2);
+}
 TEST_CASE("countPrime abonormal")
 {
-    CHECK(countPrime(0,0)==0);
-    CHECK(countPrime(1,1)==0);
-    CHECK(countPrime(2,2)==1);
+    CHECK(countPrimes(0,0)==0);
+    CHECK(countPrimes(1,1)==0);
+    CHECK(countPrimes(2,2)==1);
+}
 TEST_CASE("countPrime normal cases")
 {
-    CHECK(countPrime(-100,3)==2);
-    CHECK(countPrime(0,10)==4);
-    CHECK(countPrime(2,3)==2);
+    CHECK(countPrimes(-100,3)==2);
+    CHECK(countPrimes(0,10)==4);
+    CHECK(countPrimes(2,3)==2);
 }
 TEST_CASE("isTwinPrime negative cases")
 {
