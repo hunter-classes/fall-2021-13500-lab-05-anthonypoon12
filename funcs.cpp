@@ -37,3 +37,14 @@ int countPrimes(int a, int b)
     }
     return output;
 }
+bool isTwinPrime(int n)
+{
+    if (isPrime(n))
+    {
+        if (isPrime(n+2))
+            return true;
+        if (isPrime(n-2))
+            return true;
+    }
+    return false;
+}
