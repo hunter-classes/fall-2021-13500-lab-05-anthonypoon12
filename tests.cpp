@@ -1,3 +1,11 @@
+/*
+Author: Anthony Poon
+Course: CSCI-135
+Instructor: Tong Yi/Mike Zamansky
+Assignment: Lab 5
+Test cases for funcs.cpp
+*/
+
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
 #include "funcs.h"
