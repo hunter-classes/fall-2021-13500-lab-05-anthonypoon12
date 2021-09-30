@@ -48,3 +48,10 @@ bool isTwinPrime(int n)
     }
     return false;
 }
+int nextTwinPrime(int n)
+{
+    int x = nextPrime(n);
+    if (!isPrime(x))
+        x = nextPrime(x);
+    return x;
+}
