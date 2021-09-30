@@ -11,7 +11,7 @@ TEST_CASE("isDivisibleBy normal cases")
 TEST_CASE("isDivisibleBy cases with 0")
 {
     CHECK(isDivisibleBy(10,0)==false);
-    CHECK(isDivisibleBy(0,5)==false);
+    CHECK(isDivisibleBy(0,5)==true);
 }  
 TEST_CASE("isPrime cases for 0, 1, and 2")
 {
