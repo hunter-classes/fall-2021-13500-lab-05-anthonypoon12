@@ -80,3 +80,9 @@ TEST_CASE("nextTwinPrime test cases")
     CHECK(nextTwinPrime(2)==3);
     CHECK(nextTwinPrime(5)==7);
 }
+TEST_CASE("largestTwinPrime test cases")
+{
+    CHECK(largestTwinPrime(5,18)==17);
+    CHECK(largestTwinPrime(1,31)==31);
+    CHECK(largestTwinPrime(14,16)==-1);
+}
