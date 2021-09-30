@@ -59,3 +59,17 @@ TEST_CASE("countPrime normal cases")
     CHECK(countPrime(0,10)==4);
     CHECK(countPrime(2,3)==2);
 }
+TEST_CASE("isTwinPrime negative cases")
+{
+    CHECK(isTwinPrime(-1)==false);
+    CHECK(isTwinPrime(-10)==false);
+}
+TEST_CASE("isTwinPrime normal cases")
+{
+    CHECK(isTwinPrime(0)==false);
+    CHECK(isTwinPrime(1)==false);
+    CHECK(isTwinPrime(2)==false);
+    CHECK(isTwinPrime(3)==true);
+    CHECK(isTwinPrime(4)==false);
+    CHECK(isTwinPrime(5)==true);
+}
