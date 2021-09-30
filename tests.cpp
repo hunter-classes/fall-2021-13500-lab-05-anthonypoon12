@@ -73,3 +73,10 @@ TEST_CASE("isTwinPrime normal cases")
     CHECK(isTwinPrime(4)==false);
     CHECK(isTwinPrime(5)==true);
 }
+TEST_CASE("nextTwinPrime test cases")
+{
+    CHECK(nextTwinPrime(-100)==3);
+    CHECK(nextTwinPrime(0)==3);
+    CHECK(nextTwinPrime(2)==3);
+    CHECK(nextTwinPrime(5)==7);
+}
