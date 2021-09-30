@@ -3,7 +3,7 @@
 
 bool isDivisibleBy (int n, int d)
 {
-    if ((d==0)||(d>n))
+    if ((d==0)||((d>n)&&(d!=0)))
         return false;
     else if (n%d==0)
         return true;
