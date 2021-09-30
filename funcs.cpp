@@ -9,3 +9,14 @@ bool isDivisibleBy (int n, int d)
         return true;
     return false;
 }
+bool isPrime(int n)
+{
+    if (n<2)
+        return false;
+    if (n==2)
+        return true;
+    for (int i = 2;i<n;n++)
+        if (isDivisibleBy(n,i))
+            return false;
+    return true;
+}
