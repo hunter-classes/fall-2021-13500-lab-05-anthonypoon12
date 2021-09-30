@@ -13,7 +13,7 @@ main file for funcs.cpp
 
 int main()
 {
-std::cout<<std::boolalpha;
+  std::cout<<std::boolalpha;
   std::cout<<"10 is divisible by 5: "<<isDivisibleBy(10,5)<<std::endl;
   std::cout<<"1 is divisible by 5: "<<isDivisibleBy(1,5)<<std::endl;
   std::cout<<"10 is divisible by 50: "<<isDivisibleBy(10,50)<<std::endl;
