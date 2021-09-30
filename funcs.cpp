@@ -20,3 +20,10 @@ bool isPrime(int n)
             return false;
     return true;
 }
+int nextPrime(int n)
+{
+    int x = n+1;
+    while (!isPrime(x))
+        x++;
+    return x;
+}
