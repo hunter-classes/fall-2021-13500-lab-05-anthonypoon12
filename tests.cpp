@@ -21,10 +21,10 @@ TEST_CASE("isPrime cases for 0, 1, and 2")
 }
 TEST_CASE("isPrime normal cases")
 {
-    CHECK(isPrime(3)==false);
+    CHECK(isPrime(3)==true);
     CHECK(isPrime(4)==false);
     CHECK(isPrime(5)==true);
-    CHECK(isPrime(121)==true);
+    CHECK(isPrime(121)==false);
     CHECK(isPrime(97)==true);
 }
 TEST_CASE("nextPrime cases for 0, 1, and 2")
@@ -48,7 +48,7 @@ TEST_CASE("nextPrime normal cases")
 TEST_CASE("nextPrime negative cases")
 {
     CHECK(nextPrime(-1)==2);
-    CHECK(nextPrime(100)==2);
+    CHECK(nextPrime(-100)==2);
 }
 TEST_CASE("countPrime abonormal")
 {
