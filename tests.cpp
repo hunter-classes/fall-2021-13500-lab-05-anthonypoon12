@@ -6,7 +6,7 @@ TEST_CASE("isDivisibleBy normal cases")
 {
     CHECK(isDivisibleBy(10,5)==true);
     CHECK(isDivisibleBy(1,5)==false);
-    CHECK(isDivisibleBy(10,50)==true);
+    CHECK(isDivisibleBy(10,50)==false);
 }
 TEST_CASE("isDivisibleBy cases with 0")
 {
