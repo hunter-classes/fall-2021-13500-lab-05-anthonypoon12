@@ -51,7 +51,7 @@ bool isTwinPrime(int n)
 int nextTwinPrime(int n)
 {
     int x = nextPrime(n);
-    if (!isPrime(x))
+    if (!isTwinPrime(x))
         x = nextPrime(x);
     return x;
 }
