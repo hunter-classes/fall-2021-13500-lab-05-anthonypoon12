@@ -15,7 +15,7 @@ bool isPrime(int n)
         return false;
     if (n==2)
         return true;
-    for (int i = 2;i<n;n++)
+    for (int i = 2;i<n;i++)
         if (isDivisibleBy(n,i))
             return false;
     return true;
