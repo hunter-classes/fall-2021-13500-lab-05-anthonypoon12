@@ -45,7 +45,7 @@ If there is no twin primes in range, then return -1.
 
 bool isDivisibleBy (int n, int d)
 {
-    if ((d==0)||((d>n)&&(n!=0)))
+    if (d==0)
         return false;
     else if (n%d==0)
         return true;
