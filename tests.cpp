@@ -21,6 +21,13 @@ TEST_CASE("isDivisibleBy cases with 0")
     CHECK(isDivisibleBy(10,0)==false);
     CHECK(isDivisibleBy(0,5)==true);
 }  
+TEST_CASE("isDivisibleBy cases with negatives")
+{
+    CHECK(isDivisibleBy(-10, 2) == true);
+    CHECK(isDivisibleBy(-10, -5) == true);
+    CHECK(isDivisibleBy(10, -6) == false);
+
+}  
 TEST_CASE("isPrime cases for 0, 1, and 2")
 {
     CHECK(isPrime(0)==false);
