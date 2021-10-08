@@ -20,6 +20,7 @@ int main()
   std::cout<<"10 is divisible by 50: "<<isDivisibleBy(10,50)<<std::endl;
   std::cout<<"10 is divisible by 0: "<<isDivisibleBy(10,0)<<std::endl;
   std::cout<<"0 is divisible by 5: "<<isDivisibleBy(0,5)<<std::endl;
+  std::cout<<"0 is divisible by 0: "<<isDivisibleBy(0,0)<<std::endl;
   std::cout<<"\n\n\n";
   std::cout<<"Testing isPrime:\n";
   std::cout<<"0 is a prime number: "<<isPrime(0)<<std::endl;
@@ -46,6 +47,7 @@ int main()
   std::cout<<"\n\n\n";
   std::cout<<"Testing countPrime:\n";
   std::cout<<"The amount of prime numbers between 0 and 0 is: "<<countPrimes(0,0)<<std::endl;
+  std::cout<<"The amount of prime numbers between 30 and 10 is: "<<countPrimes(30,10)<<std::endl;
   std::cout<<"The amount of prime numbers between 1 and 1 is: "<<countPrimes(1,1)<<std::endl;
   std::cout<<"The amount of prime numbers between 2 and 2 is: "<<countPrimes(2,2)<<std::endl;
   std::cout<<"The amount of prime numbers between -100 and 3 is: "<<countPrimes(-100,3)<<std::endl;
@@ -69,6 +71,8 @@ int main()
   std::cout<<"The next twin prime after 5 is: "<<nextTwinPrime(5)<<std::endl;
   std::cout<<"\n\n\n";
   std::cout<<"Testing largestTwinPrime(if answer is -1 it means N/A):\n";
+  std::cout<<"The largest twin prime within the range 0 and 0 is: "<<largestTwinPrime(0,0)<<std::endl;
+  std::cout<<"The largest twin prime within the range 00 and 0 is: "<<largestTwinPrime(90,0)<<std::endl;
   std::cout<<"The largest twin prime within the range 5 and 18 is: "<<largestTwinPrime(5,18)<<std::endl;
   std::cout<<"The largest twin prime within the range 1 and 31 is: "<<largestTwinPrime(1,31)<<std::endl;
   std::cout<<"The largest twin prime within the range 14 and 16 is: "<<largestTwinPrime(14,16)<<std::endl;
