@@ -72,7 +72,7 @@ int main()
   std::cout<<"\n\n\n";
   std::cout<<"Testing largestTwinPrime(if answer is -1 it means N/A):\n";
   std::cout<<"The largest twin prime within the range 0 and 0 is: "<<largestTwinPrime(0,0)<<std::endl;
-  std::cout<<"The largest twin prime within the range 00 and 0 is: "<<largestTwinPrime(90,0)<<std::endl;
+  std::cout<<"The largest twin prime within the range 90 and 0 is: "<<largestTwinPrime(90,0)<<std::endl;
   std::cout<<"The largest twin prime within the range 5 and 18 is: "<<largestTwinPrime(5,18)<<std::endl;
   std::cout<<"The largest twin prime within the range 1 and 31 is: "<<largestTwinPrime(1,31)<<std::endl;
   std::cout<<"The largest twin prime within the range 14 and 16 is: "<<largestTwinPrime(14,16)<<std::endl;
