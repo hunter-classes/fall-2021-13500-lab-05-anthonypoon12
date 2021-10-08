@@ -18,16 +18,17 @@ TEST_CASE("isDivisibleBy normal cases")
 }
 TEST_CASE("isDivisibleBy cases with 0")
 {
+    CHECK(isDivisibleBy(0,0) == false);
     CHECK(isDivisibleBy(10,0)==false);
     CHECK(isDivisibleBy(0,5)==true);
-}  
+}
 TEST_CASE("isDivisibleBy cases with negatives")
 {
     CHECK(isDivisibleBy(-10, 2) == true);
     CHECK(isDivisibleBy(-10, -5) == true);
     CHECK(isDivisibleBy(10, -6) == false);
 
-}  
+}
 TEST_CASE("isPrime cases for 0, 1, and 2")
 {
     CHECK(isPrime(0)==false);
@@ -36,6 +37,7 @@ TEST_CASE("isPrime cases for 0, 1, and 2")
 }
 TEST_CASE("isPrime normal cases")
 {
+    CHECK(isPrime(0) == false);
     CHECK(isPrime(3)==true);
     CHECK(isPrime(4)==false);
     CHECK(isPrime(5)==true);
@@ -67,6 +69,7 @@ TEST_CASE("nextPrime negative cases")
 }
 TEST_CASE("countPrime abonormal")
 {
+    CHECK(countPrimes(30,10) == 6);
     CHECK(countPrimes(0,0)==0);
     CHECK(countPrimes(1,1)==0);
     CHECK(countPrimes(2,2)==1);
@@ -100,7 +103,9 @@ TEST_CASE("nextTwinPrime test cases")
 }
 TEST_CASE("largestTwinPrime test cases")
 {
+    CHECK(largestTwinPrime(0,0) == -1);
     CHECK(largestTwinPrime(5,18)==17);
     CHECK(largestTwinPrime(1,31)==31);
     CHECK(largestTwinPrime(14,16)==-1);
+    CHECK(largestTwinPrime(90,0) == 73);
 }
