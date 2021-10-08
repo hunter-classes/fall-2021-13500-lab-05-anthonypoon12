@@ -71,8 +71,15 @@ int nextPrime(int n)
 }
 int countPrimes(int a, int b)
 {
+	int aa = a;
+	int bb = b;
+	if (a>b)
+	{
+		aa=b;
+		bb=a;
+	}
     int output=0;
-    for (int i = a; i<=b;i++)
+    for (int i = aa; i<=bb;i++)
     {
         if (isPrime(i))
             output++;
@@ -99,7 +106,14 @@ int nextTwinPrime(int n)
 }
 int largestTwinPrime(int a, int b)
 {
-    for (int i = b; i >= a; i--)
+	int aa = a;
+	int bb = b;
+	if (a>b)
+	{
+		aa=b;
+		bb=a;
+	}
+    for (int i = bb; i >= aa; i--)
         if (isTwinPrime(i))
             return i;
     return -1;
